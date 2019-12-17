@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+
+<sdf version="1.6">
+  <world name="default">
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="marker0">
+      <include>
+        <static>true</static>
+        <uri>model://marker_0</uri>
+      </include>
+      <pose>2.0 0.0 0.0 0.0 -1.5707963267948966 0.0</pose>
+    </model>
+    <model name="marker1">
+      <include>
+        <static>true</static>
+        <uri>model://marker_1</uri>
+      </include>
+      <pose>1.4142135623730951 1.414213562373095 0.0 0.0 -1.5707963267948966 0.7853981633974482</pose>
+    </model>
+    <model name="marker2">
+      <include>
+        <static>true</static>
+        <uri>model://marker_2</uri>
+      </include>
+      <pose>1.2246467991473532e-16 2.0 0.0 0.0 -1.5707963267948966 1.5707963267948966</pose>
+    </model>
+    <model name="marker3">
+      <include>
+        <static>true</static>
+        <uri>model://marker_3</uri>
+      </include>
+      <pose>-1.414213562373095 1.4142135623730951 0.0 0.0 -1.5707963267948966 2.356194490192345</pose>
+    </model>
+    <model name="marker4">
+      <include>
+        <static>true</static>
+        <uri>model://marker_4</uri>
+      </include>
+      <pose>-2.0 2.4492935982947064e-16 0.0 0.0 -1.5707963267948966 3.141592653589793</pose>
+    </model>
+    <model name="marker5">
+      <include>
+        <static>true</static>
+        <uri>model://marker_5</uri>
+      </include>
+      <pose>-1.4142135623730954 -1.414213562373095 0.0 1.006490332776774e-16 -1.5707963267948966 -2.3561944901923453</pose>
+    </model>
+    <model name="marker6">
+      <include>
+        <static>true</static>
+        <uri>model://marker_6</uri>
+      </include>
+      <pose>-3.6739403974420594e-16 -2.0 0.0 0.0 -1.5707963267948966 -1.5707963267948968</pose>
+    </model>
+    <model name="marker7">
+      <include>
+        <static>true</static>
+        <uri>model://marker_7</uri>
+      </include>
+      <pose>1.4142135623730947 -1.4142135623730954 0.0 0.0 -1.5707963267948966 -0.7853981633974486</pose>
+    </model>
+  </world>
+</sdf>
