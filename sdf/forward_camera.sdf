@@ -89,5 +89,12 @@
             </sensor>
             <gravity>0</gravity> <!-- Turn gravity off -->
         </link>
+        <plugin name="MotionPlugin" filename="libMotionPlugin.so">
+          <link name="base_link">
+            <period>10</period>
+            <linear_vel>0.2, 0, 0</linear_vel>
+            <angular_vel>1.0, 0, 0</angular_vel>
+          </link>
+        </plugin>
     </model>
 </sdf>
