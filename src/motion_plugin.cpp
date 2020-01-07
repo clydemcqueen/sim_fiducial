@@ -7,15 +7,17 @@ namespace gazebo
   class MotionPlugin : public ModelPlugin
   {
     physics::LinkPtr link_;
+    double duration_{0};
     double period_{5};
     ignition::math::Vector3d linear_vel_{0.1, 0, 0};
     ignition::math::Vector3d angular_vel_{0.5, 0, 0};
 
     ignition::math::Vector3d rev_linear_vel_;
     ignition::math::Vector3d rev_angular_vel_;
-    
+    ignition::math::Vector3d zero_vel_;
+
     event::ConnectionPtr update_connection_;
-    
+
     bool running_{false};
     gazebo::common::Time start_time_;
 
@@ -30,6 +32,7 @@ namespace gazebo
       std::cout << "MOTION PLUGIN PARAMETERS" << std::endl;
       std::cout << "-----------------------------------------" << std::endl;
       std::cout << "Default link name: " << link_name << std::endl;
+      std::cout << "Default duration (0=no end): " << duration_ << std::endl;
       std::cout << "Default period: " << period_ << std::endl;
       std::cout << "Default linear_vel: " << linear_vel_ << std::endl;
       std::cout << "Default angular_vel: " << angular_vel_ << std::endl;
@@ -43,6 +46,11 @@ namespace gazebo
         if (linkElem->HasAttribute("name")) {
           linkElem->GetAttribute("name")->Get(link_name);
           std::cout << "Link name: " << link_name << std::endl;
+        }
+
+        if (linkElem->HasElement("duration")) {
+          duration_ = linkElem->GetElement("duration")->Get<double>();
+          std::cout << "duration: " << duration_ << std::endl;
         }
 
         if (linkElem->HasElement("period")) {
@@ -72,6 +80,7 @@ namespace gazebo
 
       rev_linear_vel_ = ignition::math::Vector3d(-linear_vel_.X(), -linear_vel_.Y(), -linear_vel_.Z());
       rev_angular_vel_ = ignition::math::Vector3d(-angular_vel_.X(), -angular_vel_.Y(), -angular_vel_.Z());
+      zero_vel_ = ignition::math::Vector3d{};
     }
 
     // Called by the world update start event, up to 1000 times per second.
@@ -82,7 +91,12 @@ namespace gazebo
         start_time_ = info.simTime;
       }
 
-      if (fmod((info.simTime - start_time_).Double(), period_) > period_ / 2) {
+      auto elapsed = (info.simTime - start_time_).Double();
+      if (duration_ != 0.0 && elapsed > duration_) {
+        // stop
+        link_->SetLinearVel(zero_vel_);
+        link_->SetAngularVel(zero_vel_);
+      } else if (fmod(elapsed, period_) > period_ / 2) {
         // Forward
         link_->SetLinearVel(linear_vel_);
         link_->SetAngularVel(angular_vel_);

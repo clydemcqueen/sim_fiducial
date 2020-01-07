@@ -109,12 +109,14 @@ box_of_markers = circle_of_planes_of_markers(0, 2, 1, 1., 2., 4)
 
 # a circle of markers
 circle_of_markers = circle_of_planes_of_markers(0, 1, 1, 1., 2., 8)
+dense_circle_of_markers = circle_of_planes_of_markers(0, 1, 1, 1., 2., 16)
 
 worlds = [
     ['one_marker.world', 'one_marker_map.yaml', one_marker],
     ['yz_plane_of_markers.world', 'yz_plane_of_markers_map.yaml', yz_plane_of_markers],
     ['box_of_markers.world', 'box_of_markers_map.yaml', box_of_markers],
     ['circle_of_markers.world', 'circle_of_markers_map.yaml', circle_of_markers],
+    ['dense_circle_of_markers.world', 'dense_circle_of_markers_map.yaml', dense_circle_of_markers],
 ]
 
 for world in worlds:
