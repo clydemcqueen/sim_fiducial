@@ -7,59 +7,59 @@
       <uri>model://sun</uri>
     </include>
 
-    <model name="marker0">
+    <model name="marker_00">
       <include>
         <static>true</static>
-        <uri>model://marker_0</uri>
+        <uri>model://aruco_6x6_marker_00</uri>
       </include>
       <pose>2.0 -1.5 0.0 0.0 -1.5707963267948966 0.0</pose>
     </model>
-    <model name="marker1">
+    <model name="marker_01">
       <include>
         <static>true</static>
-        <uri>model://marker_1</uri>
+        <uri>model://aruco_6x6_marker_01</uri>
       </include>
       <pose>2.0 -0.5 0.0 0.0 -1.5707963267948966 0.0</pose>
     </model>
-    <model name="marker2">
+    <model name="marker_02">
       <include>
         <static>true</static>
-        <uri>model://marker_2</uri>
+        <uri>model://aruco_6x6_marker_02</uri>
       </include>
       <pose>2.0 0.5 0.0 0.0 -1.5707963267948966 0.0</pose>
     </model>
-    <model name="marker3">
+    <model name="marker_03">
       <include>
         <static>true</static>
-        <uri>model://marker_3</uri>
+        <uri>model://aruco_6x6_marker_03</uri>
       </include>
       <pose>2.0 1.5 0.0 0.0 -1.5707963267948966 0.0</pose>
     </model>
-    <model name="marker4">
+    <model name="marker_04">
       <include>
         <static>true</static>
-        <uri>model://marker_4</uri>
+        <uri>model://aruco_6x6_marker_04</uri>
       </include>
       <pose>2.0 -1.5 1.0 0.0 -1.5707963267948966 0.0</pose>
     </model>
-    <model name="marker5">
+    <model name="marker_05">
       <include>
         <static>true</static>
-        <uri>model://marker_5</uri>
+        <uri>model://aruco_6x6_marker_05</uri>
       </include>
       <pose>2.0 -0.5 1.0 0.0 -1.5707963267948966 0.0</pose>
     </model>
-    <model name="marker6">
+    <model name="marker_06">
       <include>
         <static>true</static>
-        <uri>model://marker_6</uri>
+        <uri>model://aruco_6x6_marker_06</uri>
       </include>
       <pose>2.0 0.5 1.0 0.0 -1.5707963267948966 0.0</pose>
     </model>
-    <model name="marker7">
+    <model name="marker_07">
       <include>
         <static>true</static>
-        <uri>model://marker_7</uri>
+        <uri>model://aruco_6x6_marker_07</uri>
       </include>
       <pose>2.0 1.5 1.0 0.0 -1.5707963267948966 0.0</pose>
     </model>

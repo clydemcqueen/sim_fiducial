@@ -7,10 +7,10 @@
       <uri>model://sun</uri>
     </include>
 
-    <model name="marker0">
+    <model name="marker_00">
       <include>
         <static>true</static>
-        <uri>model://marker_0</uri>
+        <uri>model://aruco_6x6_marker_00</uri>
       </include>
       <pose>2 0 0 0 -1.5707963267948966 0</pose>
     </model>
