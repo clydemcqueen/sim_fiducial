@@ -75,7 +75,7 @@ markers:
 
 def vertical_plane_of_markers(id_first, rows, cols, spacing, origin_pose):
     xforms = [origin_pose @ xf.compose_matrix(None, None, [0, -math.pi / 2, 0],
-                                              [0, (c - (cols - 1) / 2) * spacing, r * spacing])
+                                              [0, (c - (cols - 1) / 2) * spacing, (r - (rows - 1) / 2) * spacing])
               for r in range(rows)
               for c in range(cols)]
     decompositions = [xf.decompose_matrix(xform) for xform in xforms]
@@ -111,12 +111,19 @@ box_of_markers = circle_of_planes_of_markers(0, 2, 1, 1., 2., 4)
 circle_of_markers = circle_of_planes_of_markers(0, 1, 1, 1., 2., 8)
 dense_circle_of_markers = circle_of_planes_of_markers(0, 1, 1, 1., 2., 16)
 
+eight_planes_of_four_markers = circle_of_planes_of_markers(0, 2, 2, 1., 2., 8)
+three_circles_of_markers = circle_of_planes_of_markers(0, 3, 1, 1., 2., 8)
+three_dense_circles_of_markers = circle_of_planes_of_markers(0, 3, 1, 1., 2., 16)
+
 worlds = [
     ['one_marker.world', 'one_marker_map.yaml', one_marker],
     ['yz_plane_of_markers.world', 'yz_plane_of_markers_map.yaml', yz_plane_of_markers],
     ['box_of_markers.world', 'box_of_markers_map.yaml', box_of_markers],
     ['circle_of_markers.world', 'circle_of_markers_map.yaml', circle_of_markers],
     ['dense_circle_of_markers.world', 'dense_circle_of_markers_map.yaml', dense_circle_of_markers],
+    ['eight_planes_of_four_markers.world', 'eight_planes_of_four_markers.yaml', eight_planes_of_four_markers],
+    ['three_circles_of_markers.world', 'three_circles_of_markers.yaml', three_circles_of_markers],
+    ['three_dense_circles_of_markers.world', 'three_dense_circles_of_markers.yaml', three_dense_circles_of_markers],
 ]
 
 for world in worlds:

@@ -51,7 +51,7 @@
                 </material>
             </visual>
             <sensor type="camera" name="forward_camera">
-                <update_rate>15.0</update_rate>
+                <update_rate>7.5</update_rate>
                 <camera name="head">
                     <horizontal_fov>1.4</horizontal_fov>
                     <image>

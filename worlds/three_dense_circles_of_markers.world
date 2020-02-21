@@ -1,0 +1,347 @@
+<?xml version="1.0"?>
+
+<sdf version="1.6">
+  <world name="default">
+
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <model name="marker_00">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_00</uri>
+      </include>
+      <pose>2.0 0.0 -1.0 0.0 -1.5707963267948966 0.0</pose>
+    </model>
+    <model name="marker_01">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_01</uri>
+      </include>
+      <pose>2.0 0.0 0.0 0.0 -1.5707963267948966 0.0</pose>
+    </model>
+    <model name="marker_02">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_02</uri>
+      </include>
+      <pose>2.0 0.0 1.0 0.0 -1.5707963267948966 0.0</pose>
+    </model>
+    <model name="marker_03">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_03</uri>
+      </include>
+      <pose>1.8477590650225735 0.7653668647301796 -1.0 -5.032451663883872e-17 -1.5707963267948966 0.3926990816987242</pose>
+    </model>
+    <model name="marker_04">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_04</uri>
+      </include>
+      <pose>1.8477590650225735 0.7653668647301796 0.0 -5.032451663883872e-17 -1.5707963267948966 0.3926990816987242</pose>
+    </model>
+    <model name="marker_05">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_05</uri>
+      </include>
+      <pose>1.8477590650225735 0.7653668647301796 1.0 -5.032451663883872e-17 -1.5707963267948966 0.3926990816987242</pose>
+    </model>
+    <model name="marker_06">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_06</uri>
+      </include>
+      <pose>1.4142135623730951 1.414213562373095 -1.0 0.0 -1.5707963267948966 0.7853981633974482</pose>
+    </model>
+    <model name="marker_07">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_07</uri>
+      </include>
+      <pose>1.4142135623730951 1.414213562373095 0.0 0.0 -1.5707963267948966 0.7853981633974482</pose>
+    </model>
+    <model name="marker_08">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_08</uri>
+      </include>
+      <pose>1.4142135623730951 1.414213562373095 1.0 0.0 -1.5707963267948966 0.7853981633974482</pose>
+    </model>
+    <model name="marker_09">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_09</uri>
+      </include>
+      <pose>0.7653668647301797 1.8477590650225735 -1.0 0.0 -1.5707963267948966 1.1780972450961724</pose>
+    </model>
+    <model name="marker_10">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_10</uri>
+      </include>
+      <pose>0.7653668647301797 1.8477590650225735 0.0 0.0 -1.5707963267948966 1.1780972450961724</pose>
+    </model>
+    <model name="marker_11">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_11</uri>
+      </include>
+      <pose>0.7653668647301797 1.8477590650225735 1.0 0.0 -1.5707963267948966 1.1780972450961724</pose>
+    </model>
+    <model name="marker_12">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_12</uri>
+      </include>
+      <pose>1.2246467991473532e-16 2.0 -1.0 0.0 -1.5707963267948966 1.5707963267948966</pose>
+    </model>
+    <model name="marker_13">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_13</uri>
+      </include>
+      <pose>1.2246467991473532e-16 2.0 0.0 0.0 -1.5707963267948966 1.5707963267948966</pose>
+    </model>
+    <model name="marker_14">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_14</uri>
+      </include>
+      <pose>1.2246467991473532e-16 2.0 1.0 0.0 -1.5707963267948966 1.5707963267948966</pose>
+    </model>
+    <model name="marker_15">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_15</uri>
+      </include>
+      <pose>-0.7653668647301795 1.8477590650225735 -1.0 0.0 -1.5707963267948966 1.9634954084936207</pose>
+    </model>
+    <model name="marker_16">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_16</uri>
+      </include>
+      <pose>-0.7653668647301795 1.8477590650225735 0.0 0.0 -1.5707963267948966 1.9634954084936207</pose>
+    </model>
+    <model name="marker_17">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_17</uri>
+      </include>
+      <pose>-0.7653668647301795 1.8477590650225735 1.0 0.0 -1.5707963267948966 1.9634954084936207</pose>
+    </model>
+    <model name="marker_18">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_18</uri>
+      </include>
+      <pose>-1.414213562373095 1.4142135623730951 -1.0 0.0 -1.5707963267948966 2.356194490192345</pose>
+    </model>
+    <model name="marker_19">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_19</uri>
+      </include>
+      <pose>-1.414213562373095 1.4142135623730951 0.0 0.0 -1.5707963267948966 2.356194490192345</pose>
+    </model>
+    <model name="marker_20">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_20</uri>
+      </include>
+      <pose>-1.414213562373095 1.4142135623730951 1.0 0.0 -1.5707963267948966 2.356194490192345</pose>
+    </model>
+    <model name="marker_21">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_21</uri>
+      </include>
+      <pose>-1.8477590650225735 0.7653668647301798 -1.0 0.0 -1.5707963267948966 2.748893571891069</pose>
+    </model>
+    <model name="marker_22">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_22</uri>
+      </include>
+      <pose>-1.8477590650225735 0.7653668647301798 0.0 0.0 -1.5707963267948966 2.748893571891069</pose>
+    </model>
+    <model name="marker_23">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_23</uri>
+      </include>
+      <pose>-1.8477590650225735 0.7653668647301798 1.0 0.0 -1.5707963267948966 2.748893571891069</pose>
+    </model>
+    <model name="marker_24">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_24</uri>
+      </include>
+      <pose>-2.0 2.4492935982947064e-16 -1.0 0.0 -1.5707963267948966 3.141592653589793</pose>
+    </model>
+    <model name="marker_25">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_25</uri>
+      </include>
+      <pose>-2.0 2.4492935982947064e-16 0.0 0.0 -1.5707963267948966 3.141592653589793</pose>
+    </model>
+    <model name="marker_26">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_26</uri>
+      </include>
+      <pose>-2.0 2.4492935982947064e-16 1.0 0.0 -1.5707963267948966 3.141592653589793</pose>
+    </model>
+    <model name="marker_27">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_27</uri>
+      </include>
+      <pose>-1.8477590650225737 -0.7653668647301793 -1.0 0.0 -1.5707963267948966 -2.7488935718910694</pose>
+    </model>
+    <model name="marker_28">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_28</uri>
+      </include>
+      <pose>-1.8477590650225737 -0.7653668647301793 0.0 0.0 -1.5707963267948966 -2.7488935718910694</pose>
+    </model>
+    <model name="marker_29">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_29</uri>
+      </include>
+      <pose>-1.8477590650225737 -0.7653668647301793 1.0 0.0 -1.5707963267948966 -2.7488935718910694</pose>
+    </model>
+    <model name="marker_30">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_30</uri>
+      </include>
+      <pose>-1.4142135623730954 -1.414213562373095 -1.0 1.006490332776774e-16 -1.5707963267948966 -2.3561944901923453</pose>
+    </model>
+    <model name="marker_31">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_31</uri>
+      </include>
+      <pose>-1.4142135623730954 -1.414213562373095 0.0 1.006490332776774e-16 -1.5707963267948966 -2.3561944901923453</pose>
+    </model>
+    <model name="marker_32">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_32</uri>
+      </include>
+      <pose>-1.4142135623730954 -1.414213562373095 1.0 1.006490332776774e-16 -1.5707963267948966 -2.3561944901923453</pose>
+    </model>
+    <model name="marker_33">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_33</uri>
+      </include>
+      <pose>-0.7653668647301807 -1.847759065022573 -1.0 5.0324516638838715e-17 -1.5707963267948966 -1.9634954084936214</pose>
+    </model>
+    <model name="marker_34">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_34</uri>
+      </include>
+      <pose>-0.7653668647301807 -1.847759065022573 0.0 5.0324516638838715e-17 -1.5707963267948966 -1.9634954084936214</pose>
+    </model>
+    <model name="marker_35">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_35</uri>
+      </include>
+      <pose>-0.7653668647301807 -1.847759065022573 1.0 5.0324516638838715e-17 -1.5707963267948966 -1.9634954084936214</pose>
+    </model>
+    <model name="marker_36">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_36</uri>
+      </include>
+      <pose>-3.6739403974420594e-16 -2.0 -1.0 0.0 -1.5707963267948966 -1.5707963267948968</pose>
+    </model>
+    <model name="marker_37">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_37</uri>
+      </include>
+      <pose>-3.6739403974420594e-16 -2.0 0.0 0.0 -1.5707963267948966 -1.5707963267948968</pose>
+    </model>
+    <model name="marker_38">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_38</uri>
+      </include>
+      <pose>-3.6739403974420594e-16 -2.0 1.0 0.0 -1.5707963267948966 -1.5707963267948968</pose>
+    </model>
+    <model name="marker_39">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_39</uri>
+      </include>
+      <pose>0.76536686473018 -1.8477590650225733 -1.0 5.0324516638838715e-17 -1.5707963267948966 -1.1780972450961722</pose>
+    </model>
+    <model name="marker_40">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_40</uri>
+      </include>
+      <pose>0.76536686473018 -1.8477590650225733 0.0 5.0324516638838715e-17 -1.5707963267948966 -1.1780972450961722</pose>
+    </model>
+    <model name="marker_41">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_41</uri>
+      </include>
+      <pose>0.76536686473018 -1.8477590650225733 1.0 5.0324516638838715e-17 -1.5707963267948966 -1.1780972450961722</pose>
+    </model>
+    <model name="marker_42">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_42</uri>
+      </include>
+      <pose>1.4142135623730947 -1.4142135623730954 -1.0 0.0 -1.5707963267948966 -0.7853981633974486</pose>
+    </model>
+    <model name="marker_43">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_43</uri>
+      </include>
+      <pose>1.4142135623730947 -1.4142135623730954 0.0 0.0 -1.5707963267948966 -0.7853981633974486</pose>
+    </model>
+    <model name="marker_44">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_44</uri>
+      </include>
+      <pose>1.4142135623730947 -1.4142135623730954 1.0 0.0 -1.5707963267948966 -0.7853981633974486</pose>
+    </model>
+    <model name="marker_45">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_45</uri>
+      </include>
+      <pose>1.847759065022573 -0.7653668647301808 -1.0 5.0324516638838715e-17 -1.5707963267948966 -0.39269908169872486</pose>
+    </model>
+    <model name="marker_46">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_46</uri>
+      </include>
+      <pose>1.847759065022573 -0.7653668647301808 0.0 5.0324516638838715e-17 -1.5707963267948966 -0.39269908169872486</pose>
+    </model>
+    <model name="marker_47">
+      <include>
+        <static>true</static>
+        <uri>model://aruco_6x6_marker_47</uri>
+      </include>
+      <pose>1.847759065022573 -0.7653668647301808 1.0 5.0324516638838715e-17 -1.5707963267948966 -0.39269908169872486</pose>
+    </model>
+  </world>
+</sdf>

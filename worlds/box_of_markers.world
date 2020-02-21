@@ -12,56 +12,56 @@
         <static>true</static>
         <uri>model://aruco_6x6_marker_00</uri>
       </include>
-      <pose>2.0 0.0 0.0 0.0 -1.5707963267948966 0.0</pose>
+      <pose>2.0 0.0 -0.5 0.0 -1.5707963267948966 0.0</pose>
     </model>
     <model name="marker_01">
       <include>
         <static>true</static>
         <uri>model://aruco_6x6_marker_01</uri>
       </include>
-      <pose>2.0 0.0 1.0 0.0 -1.5707963267948966 0.0</pose>
+      <pose>2.0 0.0 0.5 0.0 -1.5707963267948966 0.0</pose>
     </model>
     <model name="marker_02">
       <include>
         <static>true</static>
         <uri>model://aruco_6x6_marker_02</uri>
       </include>
-      <pose>1.2246467991473532e-16 2.0 0.0 0.0 -1.5707963267948966 1.5707963267948966</pose>
+      <pose>1.2246467991473532e-16 2.0 -0.5 0.0 -1.5707963267948966 1.5707963267948966</pose>
     </model>
     <model name="marker_03">
       <include>
         <static>true</static>
         <uri>model://aruco_6x6_marker_03</uri>
       </include>
-      <pose>1.2246467991473532e-16 2.0 1.0 0.0 -1.5707963267948966 1.5707963267948966</pose>
+      <pose>1.2246467991473532e-16 2.0 0.5 0.0 -1.5707963267948966 1.5707963267948966</pose>
     </model>
     <model name="marker_04">
       <include>
         <static>true</static>
         <uri>model://aruco_6x6_marker_04</uri>
       </include>
-      <pose>-2.0 2.4492935982947064e-16 0.0 0.0 -1.5707963267948966 3.141592653589793</pose>
+      <pose>-2.0 2.4492935982947064e-16 -0.5 0.0 -1.5707963267948966 3.141592653589793</pose>
     </model>
     <model name="marker_05">
       <include>
         <static>true</static>
         <uri>model://aruco_6x6_marker_05</uri>
       </include>
-      <pose>-2.0 2.4492935982947064e-16 1.0 0.0 -1.5707963267948966 3.141592653589793</pose>
+      <pose>-2.0 2.4492935982947064e-16 0.5 0.0 -1.5707963267948966 3.141592653589793</pose>
     </model>
     <model name="marker_06">
       <include>
         <static>true</static>
         <uri>model://aruco_6x6_marker_06</uri>
       </include>
-      <pose>-3.6739403974420594e-16 -2.0 0.0 0.0 -1.5707963267948966 -1.5707963267948968</pose>
+      <pose>-3.6739403974420594e-16 -2.0 -0.5 0.0 -1.5707963267948966 -1.5707963267948968</pose>
     </model>
     <model name="marker_07">
       <include>
         <static>true</static>
         <uri>model://aruco_6x6_marker_07</uri>
       </include>
-      <pose>-3.6739403974420594e-16 -2.0 1.0 0.0 -1.5707963267948966 -1.5707963267948968</pose>
+      <pose>-3.6739403974420594e-16 -2.0 0.5 0.0 -1.5707963267948966 -1.5707963267948968</pose>
     </model>
   </world>
 </sdf>
