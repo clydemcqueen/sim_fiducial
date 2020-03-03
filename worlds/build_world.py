@@ -121,9 +121,9 @@ worlds = [
     ['box_of_markers.world', 'box_of_markers_map.yaml', box_of_markers],
     ['circle_of_markers.world', 'circle_of_markers_map.yaml', circle_of_markers],
     ['dense_circle_of_markers.world', 'dense_circle_of_markers_map.yaml', dense_circle_of_markers],
-    ['eight_planes_of_four_markers.world', 'eight_planes_of_four_markers.yaml', eight_planes_of_four_markers],
-    ['three_circles_of_markers.world', 'three_circles_of_markers.yaml', three_circles_of_markers],
-    ['three_dense_circles_of_markers.world', 'three_dense_circles_of_markers.yaml', three_dense_circles_of_markers],
+    ['eight_planes_of_four_markers.world', 'eight_planes_of_four_markers_map.yaml', eight_planes_of_four_markers],
+    ['three_circles_of_markers.world', 'three_circles_of_markers_map.yaml', three_circles_of_markers],
+    ['three_dense_circles_of_markers.world', 'three_dense_circles_of_markers_map.yaml', three_dense_circles_of_markers],
 ]
 
 for world in worlds:
