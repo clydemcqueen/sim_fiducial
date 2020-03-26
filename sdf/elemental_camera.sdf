@@ -23,9 +23,9 @@
             <collision name='base_link_collision'>
                 <pose frame=''>0 0 0 0 -0 0</pose>
                 <geometry>
-                    <sphere>
-                        <radius>0.052</radius>
-                    </sphere>
+                    <box>
+                        <size>0.190983004 0.5 0.309016994</size>
+                    </box>
                 </geometry>
                 <surface>
                     <contact>
@@ -39,9 +39,54 @@
             <visual name='base_link_visual'>
                 <pose frame=''>0 0 0 0 -0 0</pose>
                 <geometry>
-                    <sphere>
-                        <radius>0.052</radius>
-                    </sphere>
+                    <box>
+                        <size>0.190983004 0.5 0.309016994</size>
+                    </box>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>__default__</uri>
+                        <name>__default__</name>
+                    </script>
+                </material>
+            </visual>
+            <visual name='aperture_ring_visual'>
+                <pose frame=''>0.03125 0 0 0 1.57079 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.125</radius>
+                        <length>0.253483004</length>
+                    </cylinder>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>__default__</uri>
+                        <name>__default__</name>
+                    </script>
+                </material>
+            </visual>
+            <visual name='lens_visual'>
+                <pose frame=''>0.11125 0 0 0 1.57079 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.110</radius>
+                        <length>0.413483004</length>
+                    </cylinder>
+                </geometry>
+                <material>
+                    <script>
+                        <uri>__default__</uri>
+                        <name>__default__</name>
+                    </script>
+                </material>
+            </visual>
+            <visual name='shutter_button_visual'>
+                <pose frame=''>0 -0.125 0.170133497 0 0 0</pose>
+                <geometry>
+                    <cylinder>
+                        <radius>0.035</radius>
+                        <length>0.03125</length>
+                    </cylinder>
                 </geometry>
                 <material>
                     <script>
@@ -89,13 +134,6 @@
             </sensor>
             <gravity>0</gravity> <!-- Turn gravity off -->
         </link>
-        <plugin name="MotionPlugin" filename="libMotionPlugin.so">
-            <link name="base_link">
-                <duration>80000</duration>
-                <period>80</period>
-                <linear_vel>0.0 0.0 0.0</linear_vel>
-                <angular_vel>0.0 0.0 0.157079633</angular_vel>
-            </link>
-        </plugin>
+        <plugin name="ElementalCameraPlugin" filename="libElementalCameraPlugin.so"/>
     </model>
 </sdf>
