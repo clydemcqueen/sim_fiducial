@@ -43,10 +43,8 @@ namespace sim_fiducial_gazebo
 
 
     gazebo::physics::LinkPtr link_;
-    double joy_scale_xy_{0.5};
-    double joy_scale_z_{0.5};
-    double joy_scale_roll_pitch_{0.5};
-    double joy_scale_yaw_{0.5};
+    double joy_scale_{0.2};
+    double joy_scale_roll_pitch_{0.25};
 
     // Connection to Gazebo message bus
     gazebo::event::ConnectionPtr update_connection_;
@@ -111,9 +109,9 @@ namespace sim_fiducial_gazebo
 
       auto linear_vel_f_world =
         ignition::math::Quaternion<double>{0., 0., camera_yaw_angle}.RotateVector(
-          ignition::math::Vector3d{cmd_vel_.linear.x * joy_scale_xy_,
-                                   cmd_vel_.linear.y * joy_scale_xy_,
-                                   cmd_vel_.linear.z * joy_scale_z_});
+          ignition::math::Vector3d{cmd_vel_.linear.x * joy_scale_,
+                                   cmd_vel_.linear.y * joy_scale_,
+                                   cmd_vel_.linear.z * joy_scale_});
 
       auto angular_vel_f_world = link_->WorldPose().Rot().RotateVector(
         ignition::math::Vector3d{
@@ -123,7 +121,7 @@ namespace sim_fiducial_gazebo
 
       // yaw is around the world z axis. Add this in now. This will give some strange results
       // when combining multiple angular velocities, but for individual rotations it should work as expected.
-      angular_vel_f_world.Z() += cmd_vel_.angular.z * joy_scale_yaw_;
+      angular_vel_f_world.Z() += cmd_vel_.angular.z * joy_scale_;
 
       link_->SetLinearVel(linear_vel_f_world);
       link_->SetAngularVel(angular_vel_f_world);
