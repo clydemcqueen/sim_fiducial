@@ -27,14 +27,6 @@
                         <radius>0.052</radius>
                     </sphere>
                 </geometry>
-                <surface>
-                    <contact>
-                        <ode/>
-                    </contact>
-                    <friction>
-                        <ode/>
-                    </friction>
-                </surface>
             </collision>
             <visual name='base_link_visual'>
                 <pose frame=''>0 0 0 0 -0 0</pose>
@@ -43,12 +35,6 @@
                         <radius>0.052</radius>
                     </sphere>
                 </geometry>
-                <material>
-                    <script>
-                        <uri>__default__</uri>
-                        <name>__default__</name>
-                    </script>
-                </material>
             </visual>
             <sensor type="camera" name="forward_camera">
                 <update_rate>30.0</update_rate>
@@ -92,8 +78,8 @@
         <plugin name="MotionPlugin" filename="libMotionPlugin.so">
           <link name="base_link">
             <period>10</period>
-            <linear_vel>0.2, 0, 0</linear_vel>
-            <angular_vel>1.0, 0, 0</angular_vel>
+            <linear_vel>0.2 0 0</linear_vel>
+            <angular_vel>1.0 0 0</angular_vel>
           </link>
         </plugin>
     </model>
