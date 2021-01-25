@@ -134,6 +134,13 @@
             </sensor>
             <gravity>0</gravity> <!-- Turn gravity off -->
         </link>
-        <plugin name="ElementalCameraPlugin" filename="libElementalCameraPlugin.so"/>
+        <plugin name="MotionPlugin" filename="libMotionPlugin.so">
+            <link name="base_link">
+                <duration>80000</duration>
+                <period>80</period>
+                <linear_vel>0.0 0.0 0.0</linear_vel>
+                <angular_vel>0.0 0.0 0.157079633</angular_vel>
+            </link>
+        </plugin>
     </model>
 </sdf>
